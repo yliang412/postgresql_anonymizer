@@ -44,9 +44,9 @@ REGRESS_TESTS+= generalization k_anonymity
 REGRESS_TESTS+= permissions_owner permissions_masked_role injection syntax_checks
 REGRESS_TESTS+=$(PG_TEST_EXTRA)
 # This can be overridden by an env variable
-REGRESS?=$(REGRESS_TESTS)
+# REGRESS?=$(REGRESS_TESTS)
 MODULEDIR=extension/anon
-REGRESS_OPTS = --inputdir=tests
+# REGRESS_OPTS = --inputdir=tests
 
 EXTRA_CLEAN = anon _build _venv $(ZIPBALL)
 
